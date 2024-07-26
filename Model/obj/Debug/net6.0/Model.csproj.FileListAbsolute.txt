@@ -1,0 +1,12 @@
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\bin\Debug\net6.0\Model.deps.json
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\bin\Debug\net6.0\Model.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\bin\Debug\net6.0\Model.pdb
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\obj\Debug\net6.0\Model.csproj.AssemblyReference.cache
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\obj\Debug\net6.0\Model.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\obj\Debug\net6.0\refint\Model.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\obj\Debug\net6.0\Model.pdb
+C:\Users\adm\source\repos\TesteOAuth2Basico\Model\obj\Debug\net6.0\ref\Model.dll
