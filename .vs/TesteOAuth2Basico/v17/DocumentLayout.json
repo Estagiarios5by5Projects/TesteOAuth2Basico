@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\controllers\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\controllers\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\controllers\\googleoauthcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\controllers\\googleoauthcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\services\\googleauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|solutionrelative:services\\googleauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\services\\googleoauthclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|solutionrelative:services\\googleoauthclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GoogleAuthorizationService.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleAuthorizationService.cs",
+              "RelativeDocumentMoniker": "Services\\GoogleAuthorizationService.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleAuthorizationService.cs",
+              "RelativeToolTip": "Services\\GoogleAuthorizationService.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T12:34:38.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GoogleOauthClient.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleOauthClient.cs",
+              "RelativeDocumentMoniker": "Services\\GoogleOauthClient.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleOauthClient.cs",
+              "RelativeToolTip": "Services\\GoogleOauthClient.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCAAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T19:00:56.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Program.cs",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Program.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Program.cs",
+              "RelativeToolTip": "TesteOAuth2Basico\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T18:42:40.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\Startup.cs",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Controllers\\Startup.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\Startup.cs",
+              "RelativeToolTip": "TesteOAuth2Basico\\Controllers\\Startup.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T18:41:33.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GoogleOAuthController .cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
+              "RelativeToolTip": "TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAswCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:40:32.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\appsettings.json",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\appsettings.json",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\appsettings.json",
+              "RelativeToolTip": "TesteOAuth2Basico\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-26T17:31:55.364Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
