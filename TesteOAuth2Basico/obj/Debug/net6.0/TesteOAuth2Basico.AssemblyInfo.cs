@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteOAuth2Basico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+259bdb9de814791cc1caa5ad9608fbb60278ab43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8123a20e39c715f05a4599698fc7ea0bb8151862")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteOAuth2Basico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteOAuth2Basico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

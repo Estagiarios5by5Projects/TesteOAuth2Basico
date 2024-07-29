@@ -21,9 +21,9 @@ namespace TesteOAuth2Basico.Controllers
             try
             {
                 var settings = new GoogleOAuthSettings
-            {
-                RedirectUri = "https://auth.expo.io/@luanlf/AuthenticatorTreining"
-            };
+                {
+                    RedirectUri = "https://auth.expo.io/@luanlf/AuthenticatorTreining"
+                };
                 var tokenResponse = await _googleOauthClient.GetAccessTokenAsync(code, settings.RedirectUri);
                 if (tokenResponse == null || string.IsNullOrWhiteSpace(tokenResponse.access_token))
                 {

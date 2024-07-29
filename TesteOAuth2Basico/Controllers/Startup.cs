@@ -1,4 +1,6 @@
-﻿using Model;
+﻿
+using Microsoft.Extensions.Options;
+using Model;
 using Services;
 using StackExchange.Redis;
 
@@ -15,17 +17,18 @@ namespace TesteOAuth2Basico.Controllers
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            //services.AddTransient<GoogleOauthClient>();
-            //// Configuração Google OAuth
-            //services.Configure<GoogleOAuthSettings>(Configuration.GetSection("GoogleOAuth"));
-
-            //// Configuração do GoogleOauthClient
-            //services.AddSingleton<GoogleOauthClient>(provider =>
-            //{
-            //    var settings = Configuration.GetSection("GoogleOAuth").Get<GoogleOAuthSettings>();
-            //    return new GoogleOauthClient(settings.ClientId, settings.ClientSecret, settings.TokenEndpoint, settings.ApiEndpoint);
-            //});
+            services.AddOptions();
+            services.Configure<GoogleOAuthSettings>(Configuration.GetSection("GoogleOauthSettings"));
+            services.AddTransient<GoogleOauthClient>(provider =>
+            {
+                var googleOauthSettings = provider.GetRequiredService<IOptions<GoogleOAuthSettings>>().Value;
+                return new GoogleOauthClient(
+                    googleOauthSettings.ClientId,
+                    googleOauthSettings.ClientSecret,
+                    googleOauthSettings.TokenEndpoint,
+                    googleOauthSettings.ApiEndpoint
+                );
+            });
 
             // Configuração do Redis
             var redisConfiguration = Configuration.GetSection("Redis:ConnectionString").Value;
