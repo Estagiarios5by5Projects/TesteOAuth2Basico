@@ -13,3 +13,4 @@ C:\Users\adm\source\repos\TesteOAuth2Basico\Repostories\obj\Debug\net6.0\Reposto
 C:\Users\adm\source\repos\TesteOAuth2Basico\Repostories\obj\Debug\net6.0\refint\Repostories.dll
 C:\Users\adm\source\repos\TesteOAuth2Basico\Repostories\obj\Debug\net6.0\Repostories.pdb
 C:\Users\adm\source\repos\TesteOAuth2Basico\Repostories\obj\Debug\net6.0\ref\Repostories.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\Repostories\obj\Debug\net6.0\Repostories.sourcelink.json

@@ -61,6 +61,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "dotenv.net": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             }
           },
           "imports": [
@@ -160,6 +164,10 @@
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.8.0, )"
+            },
+            "dotenv.net": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             }
           },
           "imports": [
@@ -250,6 +258,10 @@
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.8.0, )"
+            },
+            "dotenv.net": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             }
           },
           "imports": [

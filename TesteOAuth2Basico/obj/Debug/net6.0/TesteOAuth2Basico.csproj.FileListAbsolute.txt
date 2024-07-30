@@ -114,3 +114,4 @@ C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\T
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.genruntimeconfig.cache
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\ref\TesteOAuth2Basico.dll
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.sourcelink.json
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\dotenv.net.dll

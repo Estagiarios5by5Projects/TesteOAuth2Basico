@@ -1,8 +1,12 @@
-﻿
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 using Model;
+using Repositories.Utils;
 using Services;
+using Services.Queries;
 using StackExchange.Redis;
+using TesteOAuth2Basico.Repository;
+using TesteOAuth2Basico.Services.Commands;
+
 
 namespace TesteOAuth2Basico.Controllers
 {
@@ -17,6 +21,12 @@ namespace TesteOAuth2Basico.Controllers
 
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddControllers();
+            //services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<CreateUserCommandHandler>();
+            services.AddScoped<GetUserByIdQueryHandler>();
+
             services.AddOptions();
             services.Configure<GoogleOAuthSettings>(Configuration.GetSection("GoogleOauthSettings"));
             services.AddTransient<GoogleOauthClient>(provider =>

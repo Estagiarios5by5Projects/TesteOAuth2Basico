@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteOAuth2Basico", "TesteOAuth2Basico\TesteOAuth2Basico.csproj", "{D686576A-6A94-4CF9-A9D2-7C1BCB646586}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteOAuth2Basico", "TesteOAuth2Basico\TesteOAuth2Basico.csproj", "{D686576A-6A94-4CF9-A9D2-7C1BCB646586}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repostories", "Repostories\Repostories.csproj", "{D64D1874-C694-46E6-AAB0-B7F1A9A1CACA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repostories", "Repostories\Repostories.csproj", "{D64D1874-C694-46E6-AAB0-B7F1A9A1CACA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{E079D3FD-1A19-4564-8C50-96D894359F50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{E079D3FD-1A19-4564-8C50-96D894359F50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

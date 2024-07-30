@@ -56,7 +56,7 @@ namespace TesteOAuth2Basico.Repository
 
             try
             {
-                var userTokens = new GoogleUserToken
+                var userTokens = new GoogleUserData
                 {
                     IdUser = googleUser.IdUser,
                     AccessTokenGoogle = googleUser.AccessTokenGoogle,

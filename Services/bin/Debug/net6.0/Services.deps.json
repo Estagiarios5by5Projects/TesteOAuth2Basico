@@ -13,7 +13,8 @@
           "Model": "1.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Repostories": "1.0.0",
-          "StackExchange.Redis": "2.8.0"
+          "StackExchange.Redis": "2.8.0",
+          "dotenv.net": "3.2.0"
         },
         "runtime": {
           "Services.dll": {}
@@ -89,6 +90,14 @@
           "lib/net5.0/DnsClient.dll": {
             "assemblyVersion": "1.6.1.0",
             "fileVersion": "1.6.1.0"
+          }
+        }
+      },
+      "dotenv.net/3.2.0": {
+        "runtime": {
+          "lib/netstandard2.1/dotenv.net.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
           }
         }
       },
@@ -710,7 +719,8 @@
         "dependencies": {
           "Dapper": "2.1.35",
           "MongoDB.Bson": "2.28.0",
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.3",
+          "dotenv.net": "3.2.0"
         },
         "runtime": {
           "Model.dll": {}
@@ -725,7 +735,8 @@
           "MongoDB.Driver": "2.28.0",
           "Newtonsoft.Json": "13.0.3",
           "Portable.BouncyCastle": "1.9.0",
-          "StackExchange.Redis": "2.8.0"
+          "StackExchange.Redis": "2.8.0",
+          "dotenv.net": "3.2.0"
         },
         "runtime": {
           "Repostories.dll": {}
@@ -780,6 +791,13 @@
       "sha512": "sha512-4H/f2uYJOZ+YObZjpY9ABrKZI+JNw3uizp6oMzTXwDw6F+2qIPhpRl/1t68O/6e98+vqNiYGu+lswmwdYUy3gg==",
       "path": "dnsclient/1.6.1",
       "hashPath": "dnsclient.1.6.1.nupkg.sha512"
+    },
+    "dotenv.net/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-shohkuZ2HxhNmLY+jCG5MJreMEtmjbaWyOIoJ920KTDwJHT9JC7WdnmrXCwqJ1JPKo5QY9oDJUEFTlQE8qSZSw==",
+      "path": "dotenv.net/3.2.0",
+      "hashPath": "dotenv.net.3.2.0.nupkg.sha512"
     },
     "IdentityModel/7.0.0": {
       "type": "package",

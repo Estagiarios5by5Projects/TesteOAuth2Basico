@@ -105,6 +105,15 @@
           }
         }
       },
+      "dotenv.net/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        }
+      },
       "IdentityModel/7.0.0": {
         "type": "package",
         "compile": {
@@ -1106,7 +1115,8 @@
         "dependencies": {
           "Dapper": "2.1.35",
           "MongoDB.Bson": "2.28.0",
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.3",
+          "dotenv.net": "3.2.0"
         },
         "compile": {
           "bin/placeholder/Model.dll": {}
@@ -1126,7 +1136,8 @@
           "MongoDB.Driver": "2.28.0",
           "Newtonsoft.Json": "13.0.3",
           "Portable.BouncyCastle": "1.9.0",
-          "StackExchange.Redis": "2.8.0"
+          "StackExchange.Redis": "2.8.0",
+          "dotenv.net": "3.2.0"
         },
         "compile": {
           "bin/placeholder/Repostories.dll": {}
@@ -1271,6 +1282,21 @@
         "lib/netstandard2.0/DnsClient.xml",
         "lib/netstandard2.1/DnsClient.dll",
         "lib/netstandard2.1/DnsClient.xml"
+      ]
+    },
+    "dotenv.net/3.2.0": {
+      "sha512": "shohkuZ2HxhNmLY+jCG5MJreMEtmjbaWyOIoJ920KTDwJHT9JC7WdnmrXCwqJ1JPKo5QY9oDJUEFTlQE8qSZSw==",
+      "type": "package",
+      "path": "dotenv.net/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dotenv.net.3.2.0.nupkg.sha512",
+        "dotenv.net.nuspec",
+        "lib/netstandard1.6/dotenv.net.dll",
+        "lib/netstandard2.0/dotenv.net.dll",
+        "lib/netstandard2.1/dotenv.net.dll"
       ]
     },
     "IdentityModel/7.0.0": {
@@ -3049,7 +3075,8 @@
       "Model >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3",
       "Repostories >= 1.0.0",
-      "StackExchange.Redis >= 2.8.0"
+      "StackExchange.Redis >= 2.8.0",
+      "dotenv.net >= 3.2.0"
     ]
   },
   "packageFolders": {
@@ -3124,6 +3151,10 @@
           "StackExchange.Redis": {
             "target": "Package",
             "version": "[2.8.0, )"
+          },
+          "dotenv.net": {
+            "target": "Package",
+            "version": "[3.2.0, )"
           }
         },
         "imports": [
