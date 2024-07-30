@@ -14,7 +14,7 @@ namespace TesteOAuth2Basico.Controllers
             _googleOauthClient = googleOauthClient;
             _googleOAuthSettings = googleOAuthSettings.Value;
         }
-        [HttpGet("auth/callback")]
+        [HttpGet("auth/callback")]//rota de callback, recebe resposta do google
         public async Task<IActionResult> AuthCallback(string code)
         {
             if (string.IsNullOrWhiteSpace(code))

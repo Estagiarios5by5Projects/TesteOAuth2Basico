@@ -20,17 +20,5 @@ namespace Services
             var db = _redis.GetDatabase();
             return await db.StringGetAsync(key);//retorna valor e se não existir, retorna null
         }
-        //public async Task CacheOAuthResponseAsync(string userId, GoogleOAuthResponse oAuthResponse) //receber resposta da autenticação e setar no Redis
-        //{
-        //    var db = _redis.GetDatabase();
-        //    var json = JsonSerializer.Serialize(oAuthResponse);
-        //    await _redis.StringSetAsync                     
-        //}
-
-        //public async Task<GoogleOAuthResponse> RetrieveOAuthResponseAsync(string userId)//Retornar resposta de autenticação salva no Redis
-        //{
-        //    var db = _redis.GetDatabase();
-        //    return <GoogleOAuthResponse>
-        //}
     }
 }

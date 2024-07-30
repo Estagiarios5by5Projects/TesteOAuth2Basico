@@ -23,21 +23,17 @@ namespace TesteOAuth2Basico.Controllers
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<GoogleAuthorizationService>();//adiciona o serviço de autorização do google
-
-
+            var allowedOrigins = Configuration["GOOGLE_REDIRECT_URI"];
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowSpecificOrigin",
-                    builder => builder.WithOrigins("https://auth.expo.io/@luanlf/AuthenticatorTreining")
+                    builder => builder.WithOrigins(allowedOrigins)
                                       .AllowAnyHeader()
                                       .AllowAnyMethod());
             });
-            //services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<CreateUserCommandHandler>();
             services.AddScoped<GetUserByIdQueryHandler>();
 
-            services.AddOptions();
             services.Configure<GoogleOAuthSettings>(Configuration.GetSection("GoogleOauthSettings"));
             services.AddTransient<GoogleOauthClient>(provider =>
             {
@@ -49,12 +45,14 @@ namespace TesteOAuth2Basico.Controllers
                     googleOauthSettings.ApiEndpoint
                 );
             });
-
             //Configuração do Redis
-            var redisConfiguration = Configuration.GetSection("Redis:ConnectionString").Value;
-            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(redisConfiguration));
+            var redisConnectionString = Configuration.GetConnectionString("RedisConnection");
+            var connectionMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
+            services.AddSingleton<IConnectionMultiplexer>(connectionMultiplexer);
+            services.AddSingleton<IDatabase>(sp => sp.GetRequiredService<ConnectionMultiplexer>().GetDatabase());
+            services.AddSingleton<UserRepository>();
             services.AddControllers();
-
+            //Configuração do JWT
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         .AddJwtBearer(options =>
         {
@@ -69,9 +67,7 @@ namespace TesteOAuth2Basico.Controllers
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:SecretKey"]))
             };
         });
-            services.AddMvc();
         }
-
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -87,6 +83,8 @@ namespace TesteOAuth2Basico.Controllers
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseCors("AllowSpecificOrigin");
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -97,6 +95,5 @@ namespace TesteOAuth2Basico.Controllers
             });
         }
     }
-
 }
 

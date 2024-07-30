@@ -1,27 +1,23 @@
 ﻿using Microsoft.Data.SqlClient;
-using MongoDB.Driver;
 using Model;
 using Dapper;
-using Azure.Core;
-using Model;
 using StackExchange.Redis;
-using Babel.ParserGenerator;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace TesteOAuth2Basico.Repository
 {
     public class UserRepository
     {
         private readonly IDatabase _redisDatabase;
-        //private readonly IMongoCollection<GoogleUserToken> _tokensCollection;
-        private readonly string _sqlConnectionString = "Data Source=127.0.0.1; Initial Catalog=DBTstOAUthBas; User Id=sa; Password=SqlServer2019!; TrustServerCertificate=Yes;";
-        //var mongoClient = new MongoClient("mongodb+srv://<username>:<password>@cluster0.mongodb.net/test?retryWrites=true&w=majority");
-        //var mongoDatabase = mongoClient.GetDatabase("YourDatabaseName");
-        //_tokensCollection = mongoDatabase.GetCollection<GoogleUserToken>("UserToken");
-        public UserRepository(IDatabase redisDatabase)
-        {
-            _redisDatabase = redisDatabase;
-        }
+        private readonly string connectionString;
 
+        public UserRepository(IConfiguration configuration, IDatabase redisDatabase)//construtor que recebe a instância do IConfiguration
+        {
+            connectionString = configuration.GetConnectionString("DefaultConnection");//inicializa string de conexão
+            _redisDatabase = redisDatabase;
+
+        }
         public async Task<bool> RegisterUserFromGoogle(GoogleUserData googleUser)
         {
             if (googleUser == null || string.IsNullOrWhiteSpace(googleUser.Email) ||
@@ -30,14 +26,17 @@ namespace TesteOAuth2Basico.Repository
             {
                 throw new ArgumentException("Dados do usuário inválidos.");
             }
-
-            int userId;
             try
             {
-                using (var sqlConnection = new SqlConnection(_sqlConnectionString))
+                using (var sqlConnection = new SqlConnection(connectionString))
                 {
                     await sqlConnection.OpenAsync();
-
+                    string checkUserExists = "SELECT COUNT(1) FROM Users WHERE Email = @Email";
+                    int userExists = await sqlConnection.ExecuteScalarAsync<int>(checkUserExists, new { Email = googleUser.Email });
+                    if (userExists > 0)
+                    {
+                        return false;
+                    }
                     string insertUser = "INSERT INTO Users (Name, Email, ProfileImageUrl) OUTPUT Inserted.Id VALUES (@Name, @Email, @ProfileImageUrl)";
                     var parameters = new
                     {
@@ -45,17 +44,13 @@ namespace TesteOAuth2Basico.Repository
                         Email = googleUser.Email,
                         ProfileImageUrl = googleUser.ProfileImageUrl
                     };
-                    userId = await sqlConnection.ExecuteScalarAsync<int>(insertUser, parameters);
+                    int rowsAffected = await sqlConnection.ExecuteAsync(insertUser, parameters);
+                    if (rowsAffected <= 0)
+                    {
+                        Console.WriteLine("Usuário não inserido.");
+                        return false;
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao inserir no SQL Server: {ex.Message}");
-                return false;
-            }
-
-            try
-            {
                 var userTokens = new GoogleUserData
                 {
                     IdUser = googleUser.IdUser,
@@ -63,27 +58,26 @@ namespace TesteOAuth2Basico.Repository
                     RefreshTokenGoogle = googleUser.RefreshTokenGoogle,
                     AccessTokenGoogleExpiresIn = googleUser.AccessTokenGoogleExpiresIn
                 };
-
                 string redisKey = $"user:{googleUser.IdUser}:tokens";
                 var tokenValue = Newtonsoft.Json.JsonConvert.SerializeObject(userTokens);
-
-                await _redisDatabase.StringSetAsync(redisKey, tokenValue);
+                bool redisResult = await _redisDatabase.StringSetAsync(redisKey, tokenValue);
+                if (!redisResult)
+                {
+                    Console.WriteLine("Erro ao inserir no Redis.");
+                    return false;
+                }
                 return true;
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine($"Erro de SQL: {ex.Message}");
+                return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao inserir no Redis: {ex.Message}");
+                Console.WriteLine($"Erro geral: {ex.Message}");
                 return false;
             }
-
-            //    await _tokensCollection.InsertOneAsync(userTokens);
-            //    return true;
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine($"Erro ao inserir no MongoDB: {ex.Message}");
-            //    return false;
-            //}
         }
     }
 }

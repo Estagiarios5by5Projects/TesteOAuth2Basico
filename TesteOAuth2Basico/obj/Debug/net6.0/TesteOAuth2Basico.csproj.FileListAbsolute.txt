@@ -116,3 +116,4 @@ C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\T
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\dotenv.net.dll
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Secrets.json
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.MvcApplicationPartsAssemblyInfo.cs
