@@ -1,5 +1,5 @@
+using Model;
 using Repositories.Utils;
-using TesteOAuth2Basico.Model;
 
 
 namespace Services.Queries
@@ -13,7 +13,7 @@ namespace Services.Queries
             _userRepository = userRepository;
         }
 
-        public async Task<User> Handle(GetUserByIdQuery query)
+        public async Task<GoogleUserData> Handle(GetUserByIdQuery query)
         {
             return await _userRepository.GetUserByIdAsync(query.UserId);
         }

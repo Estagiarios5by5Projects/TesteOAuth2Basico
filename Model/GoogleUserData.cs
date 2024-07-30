@@ -1,7 +1,7 @@
 ﻿
 namespace Model
 {
-    public class GoogleUserData
+    public class GoogleUserData //Dados do usuário autenticado pelo Google
     {
         public string IdUser { get; set; }
         public string Name { get; set; }

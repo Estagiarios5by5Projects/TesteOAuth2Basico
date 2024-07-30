@@ -98,7 +98,6 @@ C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\S
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Model.pdb
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Repostories.pdb
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Services.pdb
-C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\staticwebassets\msbuild.TesteOAuth2Basico.Microsoft.AspNetCore.StaticWebAssets.props
@@ -115,3 +114,5 @@ C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\T
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\ref\TesteOAuth2Basico.dll
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.sourcelink.json
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\dotenv.net.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Secrets.json
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

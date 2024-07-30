@@ -11,24 +11,24 @@
       "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\controllers\\googleoauthcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E079D3FD-1A19-4564-8C50-96D894359F50}|Model\\Model.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\model\\googleoauthsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E079D3FD-1A19-4564-8C50-96D894359F50}|Model\\Model.csproj|solutionrelative:model\\googleoauthsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\services\\googleoauthclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|solutionrelative:services\\googleoauthclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E079D3FD-1A19-4564-8C50-96D894359F50}|Model\\Model.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\model\\googleoauthresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E079D3FD-1A19-4564-8C50-96D894359F50}|Model\\Model.csproj|solutionrelative:model\\googleoauthresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\services\\commands\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|solutionrelative:services\\commands\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\services\\googleauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|solutionrelative:services\\googleauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D64D1874-C694-46E6-AAB0-B7F1A9A1CACA}|Repostories\\Repostories.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\repostories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64D1874-C694-46E6-AAB0-B7F1A9A1CACA}|Repostories\\Repostories.csproj|solutionrelative:repostories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\services\\rediscache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|solutionrelative:services\\rediscache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,63 +54,77 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Commands\\CreateUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Services\\Commands\\CreateUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Commands\\CreateUserCommandHandler.cs",
+              "RelativeToolTip": "Services\\Commands\\CreateUserCommandHandler.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T16:32:46.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repostories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\UserRepository.cs",
+              "RelativeToolTip": "Repostories\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T16:31:58.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GoogleOauthClient.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleOauthClient.cs",
+              "RelativeDocumentMoniker": "Services\\GoogleOauthClient.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleOauthClient.cs",
+              "RelativeToolTip": "Services\\GoogleOauthClient.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T16:25:41.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "GoogleOAuthController .cs",
               "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
               "RelativeDocumentMoniker": "TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
               "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
               "RelativeToolTip": "TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T22:37:23.255Z"
+              "WhenOpened": "2024-07-30T16:20:50.03Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GoogleOauthClient.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleOauthClient.cs",
-              "RelativeDocumentMoniker": "Services\\GoogleOauthClient.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleOauthClient.cs",
-              "RelativeToolTip": "Services\\GoogleOauthClient.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "RedisCache.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\RedisCache.cs",
+              "RelativeDocumentMoniker": "Services\\RedisCache.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\RedisCache.cs",
+              "RelativeToolTip": "Services\\RedisCache.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T22:37:05.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GoogleOAuthResponse.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\GoogleOAuthResponse.cs",
-              "RelativeDocumentMoniker": "Model\\GoogleOAuthResponse.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\GoogleOAuthResponse.cs",
-              "RelativeToolTip": "Model\\GoogleOAuthResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T22:37:01.692Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GoogleOAuthSettings.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\GoogleOAuthSettings.cs",
-              "RelativeDocumentMoniker": "Model\\GoogleOAuthSettings.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\GoogleOAuthSettings.cs",
-              "RelativeToolTip": "Model\\GoogleOAuthSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T22:37:00.086Z"
+              "WhenOpened": "2024-07-30T15:56:11.673Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GoogleAuthorizationService.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleAuthorizationService.cs",
-              "RelativeDocumentMoniker": "Services\\GoogleAuthorizationService.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\GoogleAuthorizationService.cs",
-              "RelativeToolTip": "Services\\GoogleAuthorizationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T22:36:50.283Z"
+              "Title": "Secrets.json",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Secrets.json",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Secrets.json",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Secrets.json",
+              "RelativeToolTip": "TesteOAuth2Basico\\Secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-30T15:03:14.374Z"
             },
             {
               "$type": "Document",
@@ -120,22 +134,10 @@
               "RelativeDocumentMoniker": "TesteOAuth2Basico\\Program.cs",
               "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Program.cs",
               "RelativeToolTip": "TesteOAuth2Basico\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T22:24:04.935Z",
+              "WhenOpened": "2024-07-30T15:06:15.817Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\appsettings.json",
-              "RelativeDocumentMoniker": "TesteOAuth2Basico\\appsettings.json",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\appsettings.json",
-              "RelativeToolTip": "TesteOAuth2Basico\\appsettings.json",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-29T20:02:21.67Z"
             }
           ]
         }

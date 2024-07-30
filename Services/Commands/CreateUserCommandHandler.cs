@@ -1,6 +1,5 @@
+using Model;
 using Repositories.Utils;
-using Repostories.Utils;
-using TesteOAuth2Basico.Model;
 using TesteOAuth2Basico.Service.Commands;
 
 namespace TesteOAuth2Basico.Services.Commands
@@ -16,7 +15,7 @@ namespace TesteOAuth2Basico.Services.Commands
 
         public async Task Handle(CreateUserCommand command)
         {
-            var user = new User
+            var user = new GoogleUserData
             {
                 Name = command.Name,
                 Email = command.Email

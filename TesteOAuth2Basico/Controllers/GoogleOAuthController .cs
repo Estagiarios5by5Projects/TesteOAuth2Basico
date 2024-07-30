@@ -24,11 +24,11 @@ namespace TesteOAuth2Basico.Controllers
             try
             {
                 var tokenResponse = await _googleOauthClient.GetAccessTokenAsync(code, _googleOAuthSettings.RedirectUri);
-                if (tokenResponse == null || string.IsNullOrWhiteSpace(tokenResponse.access_token))
+                if (tokenResponse == null || string.IsNullOrWhiteSpace(tokenResponse.AccessToken))
                 {
                     return Unauthorized("Não foi possível obter um token de acesso. O código pode ser inválido ou expirado.");
                 }
-                var apiResponse = await _googleOauthClient.CallApiAsync(tokenResponse.access_token);
+                var apiResponse = await _googleOauthClient.CallApiAsync(tokenResponse.AccessToken);
                 return Content(apiResponse);
             }
             catch (HttpRequestException)

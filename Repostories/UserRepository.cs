@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using MongoDB.Driver;
-using TesteOAuth2Basico.Model;
+using Model;
 using Dapper;
 using Azure.Core;
 using Model;

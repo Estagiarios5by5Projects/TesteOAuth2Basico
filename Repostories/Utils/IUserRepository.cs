@@ -1,10 +1,10 @@
-using TesteOAuth2Basico.Model;
+using Model;
 
 namespace Repositories.Utils
 {
     public interface IUserRepository
     {
-        Task AddUserAsync(User user);
-        Task<User> GetUserByIdAsync(int userId);
+        Task AddUserAsync(GoogleUserData user);
+        Task<GoogleUserData> GetUserByIdAsync(string userId);
     }
 }

@@ -1,11 +1,11 @@
 ﻿
 namespace Model
 {
-    public class GoogleOAuthResponse
+    public class GoogleOAuthResponse //Resposta de autenticação do Google
     {
-        public string access_token { get; set; }
-        public string refresh_token { get; set; }
-        public DateTime expires_in { get; set; }
+        public string AccessToken { get; set; } //token de acesso
+        public string RefreshToken { get; set; } //token de atualização, usado para obter novo token de acesso
+        public DateTime ExpiresIn { get; set; } //tempo de expiração do token de acesso
        
     }
 }

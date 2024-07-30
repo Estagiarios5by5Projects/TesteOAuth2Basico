@@ -5,6 +5,7 @@ using StackExchange.Redis;
 using dotenv.net;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<GoogleAuthorizationService>();//adiciona o serviço de autorização do google
 
 DotEnv.Load();
 builder.Configuration.AddEnvironmentVariables();
