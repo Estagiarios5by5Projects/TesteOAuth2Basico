@@ -10,7 +10,6 @@ using StackExchange.Redis;
 using TesteOAuth2Basico.Repository;
 using TesteOAuth2Basico.Services.Commands;
 
-
 namespace TesteOAuth2Basico.Controllers
 {
     public class Startup
@@ -34,39 +33,46 @@ namespace TesteOAuth2Basico.Controllers
             services.AddScoped<CreateUserCommandHandler>();
             services.AddScoped<GetUserByIdQueryHandler>();
 
+            // Registrar HttpClient
+            services.AddHttpClient();
+
+            // Configuração do Google OAuth
             services.Configure<GoogleOAuthSettings>(Configuration.GetSection("GoogleOauthSettings"));
             services.AddTransient<GoogleOauthClient>(provider =>
             {
                 var googleOauthSettings = provider.GetRequiredService<IOptions<GoogleOAuthSettings>>().Value;
+                var httpClient = provider.GetRequiredService<HttpClient>();
                 return new GoogleOauthClient(
                     googleOauthSettings.ClientId,
                     googleOauthSettings.ClientSecret,
                     googleOauthSettings.TokenEndpoint,
-                    googleOauthSettings.ApiEndpoint
+                    googleOauthSettings.ApiEndpoint,
+                    httpClient // Passa o HttpClient para o construtor
                 );
             });
-            //Configuração do Redis
+
+            // Configuração do Redis
             var redisConnectionString = Configuration.GetConnectionString("RedisConnection");
             var connectionMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
             services.AddSingleton<IConnectionMultiplexer>(connectionMultiplexer);
-            services.AddSingleton<IDatabase>(sp => sp.GetRequiredService<ConnectionMultiplexer>().GetDatabase());
+            services.AddSingleton<IDatabase>(sp => sp.GetRequiredService<IConnectionMultiplexer>().GetDatabase());
             services.AddSingleton<UserRepository>();
-            services.AddControllers();
-            //Configuração do JWT
+
+            // Configuração do JWT
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-        .AddJwtBearer(options =>
-        {
-            options.TokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true,
-                ValidateIssuerSigningKey = true,
-                ValidIssuer = Configuration["Jwt:Issuer"],
-                ValidAudience = Configuration["Jwt:Audience"],
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:SecretKey"]))
-            };
-        });
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = Configuration["Jwt:Issuer"],
+                        ValidAudience = Configuration["Jwt:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:SecretKey"]))
+                    };
+                });
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -96,4 +102,3 @@ namespace TesteOAuth2Basico.Controllers
         }
     }
 }
-

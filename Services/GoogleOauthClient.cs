@@ -16,13 +16,19 @@ namespace Services
         private readonly string _tokenEndpoint;
         private readonly string _apiEndpoint;
 
-        public GoogleOauthClient(string clientId, string clientSecret, string tokenEndpoint, string apiEndpoint)//construtor, recebe dependências
+        public GoogleOauthClient(
+            string clientId,
+            string clientSecret,
+            string tokenEndpoint,
+            string apiEndpoint,
+            HttpClient httpClient  
+        )
         {
-            //inicializa, garantindo que não seja nulo
             _clientId = clientId ?? throw new ArgumentNullException(nameof(clientId));
             _clientSecret = clientSecret ?? throw new ArgumentNullException(nameof(clientSecret));
             _tokenEndpoint = tokenEndpoint ?? throw new ArgumentNullException(nameof(tokenEndpoint));
             _apiEndpoint = apiEndpoint ?? throw new ArgumentNullException(nameof(apiEndpoint));
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
         }
         public async Task<GoogleOAuthResponse> GetAccessTokenAsync(string authorizationCode, string redirectUri) //obtem token de acesso usando um código de autorização e URI de redirecionamento
         {
