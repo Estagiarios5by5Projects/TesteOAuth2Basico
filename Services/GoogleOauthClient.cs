@@ -1,10 +1,9 @@
-﻿using Amazon.Runtime.Internal.Util;
-using Azure;
-using IdentityModel.Client;
+﻿using IdentityModel.Client;
 using Microsoft.Extensions.Logging;
-using Microsoft.SqlServer.Management.SqlParser.Parser;
 using Model;
+using System;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Services
 {
@@ -15,13 +14,14 @@ namespace Services
         private readonly string _clientSecret;
         private readonly string _tokenEndpoint;
         private readonly string _apiEndpoint;
+        private readonly ILogger<GoogleOauthClient> _logger;
 
         public GoogleOauthClient(
             string clientId,
             string clientSecret,
             string tokenEndpoint,
             string apiEndpoint,
-            HttpClient httpClient  
+            HttpClient httpClient
         )
         {
             _clientId = clientId ?? throw new ArgumentNullException(nameof(clientId));
@@ -29,68 +29,124 @@ namespace Services
             _tokenEndpoint = tokenEndpoint ?? throw new ArgumentNullException(nameof(tokenEndpoint));
             _apiEndpoint = apiEndpoint ?? throw new ArgumentNullException(nameof(apiEndpoint));
             _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+
+            // Inicializa o LoggerFactory e cria um logger sem passar pelo construtor
+            var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
+            _logger = loggerFactory.CreateLogger<GoogleOauthClient>();
         }
-        public async Task<GoogleOAuthResponse> GetAccessTokenAsync(string authorizationCode, string redirectUri) //obtem token de acesso usando um código de autorização e URI de redirecionamento
+
+        public async Task<bool> ValidateAccessTokenAsync(string accessToken)
         {
-            if (string.IsNullOrEmpty(authorizationCode))//código de autorização != nulo
+            if (string.IsNullOrEmpty(accessToken))
+            {
+                throw new ArgumentNullException(nameof(accessToken));
+            }
+
+            try
+            {
+                _logger.LogInformation("Iniciando a validação do token de acesso: {AccessToken}", accessToken);
+
+                // Enviar uma solicitação GET para validar o token
+                var response = await _httpClient.GetAsync($"https://www.googleapis.com/oauth2/v3/tokeninfo?access_token={accessToken}");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    _logger.LogError("Erro ao validar token de acesso. StatusCode: {StatusCode}", response.StatusCode);
+                    return false;
+                }
+
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                // Aqui você pode verificar o conteúdo da resposta para assegurar que o token é válido
+                // Normalmente, se o token não for válido, o Google retornará um erro com uma descrição
+
+                _logger.LogInformation("Token de acesso validado com sucesso.");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Falha ao validar o token de acesso do Google.");
+                return false;
+            }
+        }
+
+        public async Task<GoogleOAuthResponse> GetAccessTokenAsync(string authorizationCode, string redirectUri)
+        {
+            if (string.IsNullOrEmpty(authorizationCode))
             {
                 throw new ArgumentNullException(nameof(authorizationCode));
             }
-            if (string.IsNullOrEmpty(redirectUri))//URI de redirecionamento != nulo
+            if (string.IsNullOrEmpty(redirectUri))
             {
                 throw new ArgumentNullException(nameof(redirectUri));
             }
+
             try
-            {   //faz requisição para obter token de acesso
+            {
+                _logger.LogInformation("Iniciando a solicitação de token de acesso com o código de autorização: {AuthorizationCode} e redirectUri: {RedirectUri}", authorizationCode, redirectUri);
+
                 var tokenResponse = await _httpClient.RequestAuthorizationCodeTokenAsync(new AuthorizationCodeTokenRequest
                 {
-                    Address = _tokenEndpoint,//endpoint de troca de código por token
-                    Code = authorizationCode,//código de autorização
-                    ClientId = _clientId,//ID do cliente
-                    ClientSecret = _clientSecret,//chave secreta do cliente
-                    RedirectUri = redirectUri//URI de redirecionamento, após autenticação
+                    Address = _tokenEndpoint,
+                    Code = authorizationCode,
+                    ClientId = _clientId,
+                    ClientSecret = _clientSecret,
+                    RedirectUri = redirectUri
                 });
-                if (tokenResponse.IsError)//erro de resposta do token
+
+                if (tokenResponse.IsError)
                 {
-                    
-                    throw new Exception($"Erro ao obter token de acesso: {tokenResponse.Error}");//lança exceção com mensagem   
+                    _logger.LogError("Erro ao obter token de acesso. Erro: {Error}, Descrição do Erro: {ErrorDescription}", tokenResponse.Error, tokenResponse.ErrorDescription);
+                    throw new Exception($"Erro ao obter token de acesso: {tokenResponse.Error}");
                 }
-                return new GoogleOAuthResponse //retorna objeto com token de acesso
+
+                _logger.LogInformation("Token de acesso obtido com sucesso. AccessToken: {AccessToken}, RefreshToken: {RefreshToken}, ExpiresIn: {ExpiresIn}",
+                    tokenResponse.AccessToken, tokenResponse.RefreshToken, tokenResponse.ExpiresIn);
+
+                return new GoogleOAuthResponse
                 {
-                    AccessToken = tokenResponse.AccessToken,//token de acesso
-                    RefreshToken = tokenResponse.RefreshToken,//token de atualização
-                    ExpiresIn = DateTime.UtcNow.AddSeconds(tokenResponse.ExpiresIn)//tempo de expiração
+                    AccessToken = tokenResponse.AccessToken,
+                    RefreshToken = tokenResponse.RefreshToken,
+                    ExpiresIn = DateTime.UtcNow.AddSeconds(tokenResponse.ExpiresIn)
                 };
             }
             catch (Exception ex)
             {
-                
-                throw;//lança exceção
+                _logger.LogError(ex, "Falha ao obter o token de acesso do Google.");
+                throw new Exception("Falha ao obter o token de acesso do Google.", ex);
             }
         }
-        public async Task<string> CallApiAsync(string accessToken)//chama a API usando token de acesso
+
+        public async Task<string> CallApiAsync(string accessToken)
         {
-            if (string.IsNullOrEmpty(accessToken))//token de acesso != nulo
+            if (string.IsNullOrEmpty(accessToken))
             {
                 throw new ArgumentNullException(nameof(accessToken));
             }
+
             try
             {
-                _httpClient.SetBearerToken(accessToken);//define token de acesso no cabeçalho da requisição HTTP
-                var response = await _httpClient.GetAsync(_apiEndpoint);//faz requisição Get para o Endpoint da API
-                if (!response.IsSuccessStatusCode)//verifica resposta da API
+                _logger.LogInformation("Iniciando a chamada à API com AccessToken: {AccessToken}", accessToken);
+
+                _httpClient.SetBearerToken(accessToken);
+                var response = await _httpClient.GetAsync(_apiEndpoint);
+
+                if (!response.IsSuccessStatusCode)
                 {
-                   
+                    _logger.LogError("Erro ao chamar a API. StatusCode: {StatusCode}", response.StatusCode);
                     throw new Exception($"Erro ao chamar a API: {response.StatusCode}");
                 }
-                return await response.Content.ReadAsStringAsync();//lê a resposta da API
+
+                var content = await response.Content.ReadAsStringAsync();
+                _logger.LogInformation("Resposta da API recebida com sucesso. Conteúdo: {Content}", content);
+
+                return content;
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "Falha ao chamar a API.");
+                throw new Exception("Falha ao chamar a API.", ex);
             }
         }
-    }   
+    }
 }
-
-
