@@ -5,10 +5,8 @@ using Model;
 using System.Text;
 using Repositories.Utils;
 using Services;
-using Services.Queries;
 using StackExchange.Redis;
 using TesteOAuth2Basico.Repository;
-using TesteOAuth2Basico.Services.Commands;
 
 namespace TesteOAuth2Basico.Controllers
 {
@@ -53,11 +51,6 @@ namespace TesteOAuth2Basico.Controllers
                 );
             });
 
-            // Configuração do Redis
-            //var redisConnectionString = Configuration.GetConnectionString("RedisConnection");
-            //var connectionMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
-            //services.AddSingleton<IConnectionMultiplexer>(connectionMultiplexer);
-            //services.AddSingleton<IDatabase>(sp => sp.GetRequiredService<IConnectionMultiplexer>().GetDatabase());
             services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost:6379"));
 
             // Configuração do JWT

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Repostories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+588ea4bd2768078c47c657345129faa801d304c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b54ca3177a7509715ff911d371556c6ac6807f36")]
 [assembly: System.Reflection.AssemblyProductAttribute("Repostories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Repostories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

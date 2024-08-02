@@ -1,9 +1,10 @@
 ﻿using IdentityModel.Client;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 using Model;
-using System;
-using System.Net.Http;
-using System.Threading.Tasks;
+using Model.DTO;
+using TesteOAuth2Basico.Repository;
+
 
 namespace Services
 {
@@ -153,3 +154,4 @@ namespace Services
         }
     }
 }
+

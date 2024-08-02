@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\controllers\\googleoauthcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\controllers\\googleoauthcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D64D1874-C694-46E6-AAB0-B7F1A9A1CACA}|Repostories\\Repostories.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\repostories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D64D1874-C694-46E6-AAB0-B7F1A9A1CACA}|Repostories\\Repostories.csproj|solutionrelative:repostories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E079D3FD-1A19-4564-8C50-96D894359F50}|Model\\Model.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\model\\dto\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E079D3FD-1A19-4564-8C50-96D894359F50}|Model\\Model.csproj|solutionrelative:model\\dto\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\controllers\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\controllers\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,54 +34,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TokenDTO.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\DTO\\TokenDTO.cs",
-              "RelativeDocumentMoniker": "Model\\DTO\\TokenDTO.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\DTO\\TokenDTO.cs",
-              "RelativeToolTip": "Model\\DTO\\TokenDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T17:26:44.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GoogleOAuthController .cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
-              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
-              "RelativeToolTip": "TesteOAuth2Basico\\Controllers\\GoogleOAuthController .cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAcwDoAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T17:24:50.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repostories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\UserRepository.cs",
               "RelativeToolTip": "Repostories\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAABLAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwAcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T16:59:45.601Z",
+              "WhenOpened": "2024-08-02T18:34:00.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\Startup.cs",
-              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Controllers\\Startup.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\Startup.cs",
-              "RelativeToolTip": "TesteOAuth2Basico\\Controllers\\Startup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAOAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TesteOAuth2Basico\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T16:53:01.778Z"
+              "WhenOpened": "2024-08-02T18:11:07.665Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -4,7 +4,6 @@ using Services;
 using StackExchange.Redis;
 using dotenv.net;
 using TesteOAuth2Basico.Repository;
-using TesteOAuth2Basico.Services.Commands;
 using Repositories.Utils;
 
 var builder = WebApplication.CreateBuilder(args);

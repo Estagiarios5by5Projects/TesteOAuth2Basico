@@ -9,14 +9,6 @@ namespace TesteOAuth2Basico.Repository
 {
     public class UserRepository
     {
-        //private readonly IDatabase _redisDatabase;
-        //private readonly string connectionString;
-
-        //public UserRepository(IConfiguration configuration, IDatabase redisDatabase)//construtor que recebe a instância do IConfiguration
-        //{
-        //    connectionString = configuration.GetConnectionString("DefaultConnection");//inicializa string de conexão
-        //    _redisDatabase = redisDatabase;
-        //}
         public bool PostUserSql(UserDTO googleUser)
         {
             if (googleUser == null || string.IsNullOrWhiteSpace(googleUser.Email))
@@ -35,9 +27,10 @@ namespace TesteOAuth2Basico.Repository
                     {
                         return false;
                     }
-                    string insertUserQuery = "INSERT INTO Users (Name, Email, ProfileImageUrl) VALUES (@Name, @Email, @ProfileImageUrl);";
+                    string insertUserQuery = "INSERT INTO Users (IdUser, Name, Email, ProfileImageUrl) VALUES (@IdUser, @Name, @Email, @ProfileImageUrl);";
                     object obj = new
                     {
+                        @IdUser = googleUser.IdUser,
                         @Name = googleUser.Name,
                         @Email = googleUser.Email,
                         @ProfileImageUrl = googleUser.ProfileImageUrl
@@ -73,7 +66,7 @@ namespace TesteOAuth2Basico.Repository
                 };
                 string redisString = "localhost:6379";
                 ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(redisString);
-                IDatabase redisDatabase = redis.GetDatabase();
+                StackExchange.Redis.IDatabase redisDatabase = redis.GetDatabase();
                 string redisKey = $"user:{googleToken.IdUserToken}:tokens";
                 var tokenValue = Newtonsoft.Json.JsonConvert.SerializeObject(googleToken);
                 return redisDatabase.StringSet(redisKey, tokenValue);
@@ -84,69 +77,5 @@ namespace TesteOAuth2Basico.Repository
                 return false;
             }
         }
-
-
-
-        //public async Task<bool> RegisterUserFromGoogle(GoogleUserData googleUser)
-        //{
-        //    if (googleUser == null || string.IsNullOrWhiteSpace(googleUser.Email) ||
-        //        string.IsNullOrWhiteSpace(googleUser.AccessTokenGoogle) ||
-        //        string.IsNullOrWhiteSpace(googleUser.RefreshTokenGoogle))
-        //    {
-        //        throw new ArgumentException("Dados do usuário inválidos.");
-        //    }
-        //    try
-        //    {
-        //        using (var sqlConnection = new SqlConnection(connectionString))
-        //        {
-        //            await sqlConnection.OpenAsync();
-        //            string checkUserExists = "SELECT COUNT(1) FROM Users WHERE Email = @Email";
-        //            int userExists = await sqlConnection.ExecuteScalarAsync<int>(checkUserExists, new { Email = googleUser.Email });
-        //            if (userExists > 0)
-        //            {
-        //                return false;
-        //            }
-        //            string insertUser = "INSERT INTO Users (Name, Email, ProfileImageUrl) OUTPUT Inserted.Id VALUES (@Name, @Email, @ProfileImageUrl)";
-        //            var parameters = new
-        //            {
-        //                @Name = googleUser.Name,
-        //                @Email = googleUser.Email,
-        //                @ProfileImageUrl = googleUser.ProfileImageUrl
-        //            };
-        //            int rowsAffected = await sqlConnection.ExecuteAsync(insertUser, parameters);
-        //            if (rowsAffected <= 0)
-        //            {
-        //                Console.WriteLine("Usuário não inserido.");
-        //                return false;
-        //            }
-        //        }
-        //        var userTokens = new GoogleUserData
-        //        {
-        //            IdUser = googleUser.IdUser,
-        //            AccessTokenGoogle = googleUser.AccessTokenGoogle,
-        //            RefreshTokenGoogle = googleUser.RefreshTokenGoogle,
-        //            AccessTokenGoogleExpiresIn = googleUser.AccessTokenGoogleExpiresIn
-        //        };
-        //        string redisKey = $"user:{googleUser.IdUser}:tokens";
-        //        var tokenValue = Newtonsoft.Json.JsonConvert.SerializeObject(userTokens);
-        //        bool redisResult = await _redisDatabase.StringSetAsync(redisKey, tokenValue);
-        //        if (!redisResult)
-        //        {
-        //            Console.WriteLine("Erro ao inserir no Redis.");
-        //            return false;
-        //        }
-        //        return true;
-        //    }
-        //    catch (SqlException ex)
-        //    {
-        //        Console.WriteLine($"Erro de SQL: {ex.Message}");
-        //        return false;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Erro geral: {ex.Message}");
-        //        return false;
-        //    }
-        //}
     }
 }
