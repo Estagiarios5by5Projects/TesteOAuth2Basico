@@ -62,6 +62,7 @@ namespace Services
 
                 _logger.LogInformation("Token de acesso validado com sucesso.");
                 return true;
+
             }
             catch (Exception ex)
             {
@@ -87,11 +88,13 @@ namespace Services
 
                 var tokenResponse = await _httpClient.RequestAuthorizationCodeTokenAsync(new AuthorizationCodeTokenRequest
                 {
-                    Address = _tokenEndpoint,
-                    Code = authorizationCode,
-                    ClientId = _clientId,
-                    ClientSecret = _clientSecret,
-                    RedirectUri = redirectUri
+
+                    Address = "https://oauth2.googleapis.com/token",//endpoint de troca de código por token
+                    Code = authorizationCode,//código de autorização                 
+                    ClientId = "207222560636-s9tdoce9523q0g0d878alvs09ru9c9ei.apps.googleusercontent.com",//ID do cliente                    
+                    ClientSecret = "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",//chave secreta do cliente
+                    RedirectUri = redirectUri//URI de redirecionamento, após autenticação
+
                 });
 
                 if (tokenResponse.IsError)

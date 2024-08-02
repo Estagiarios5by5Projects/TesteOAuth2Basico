@@ -3463,7 +3463,7 @@
       "projectName": "Repostories",
       "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj",
       "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\obj\\",
+      "outputPath": "C:\\Users\\adm\\Source\\Repos\\TesteOAuth2Basico\\Repostories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

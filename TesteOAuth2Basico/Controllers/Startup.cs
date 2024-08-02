@@ -30,8 +30,10 @@ namespace TesteOAuth2Basico.Controllers
                                       .AllowAnyHeader()
                                       .AllowAnyMethod());
             });
-            services.AddScoped<CreateUserCommandHandler>();
-            services.AddScoped<GetUserByIdQueryHandler>();
+            
+            //services.AddScoped<GetUserByIdQueryHandler>();
+            services.AddScoped<UserRepository>();
+            services.AddScoped<ILogger<UserController>, Logger<UserController>>();
 
             // Registrar HttpClient
             services.AddHttpClient();
@@ -52,11 +54,11 @@ namespace TesteOAuth2Basico.Controllers
             });
 
             // Configuração do Redis
-            var redisConnectionString = Configuration.GetConnectionString("RedisConnection");
-            var connectionMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
-            services.AddSingleton<IConnectionMultiplexer>(connectionMultiplexer);
-            services.AddSingleton<IDatabase>(sp => sp.GetRequiredService<IConnectionMultiplexer>().GetDatabase());
-            services.AddSingleton<UserRepository>();
+            //var redisConnectionString = Configuration.GetConnectionString("RedisConnection");
+            //var connectionMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
+            //services.AddSingleton<IConnectionMultiplexer>(connectionMultiplexer);
+            //services.AddSingleton<IDatabase>(sp => sp.GetRequiredService<IConnectionMultiplexer>().GetDatabase());
+            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost:6379"));
 
             // Configuração do JWT
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

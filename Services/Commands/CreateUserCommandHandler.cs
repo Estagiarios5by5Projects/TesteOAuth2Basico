@@ -8,10 +8,10 @@ namespace TesteOAuth2Basico.Services.Commands
     {
         private readonly IUserRepository _userRepository;
 
-        public CreateUserCommandHandler(IUserRepository userRepository)
-        {
-            _userRepository = userRepository;
-        }
+        //public CreateUserCommandHandler(IUserRepository userRepository)
+        //{
+        //    _userRepository = userRepository;
+        //}
 
         public async Task Handle(CreateUserCommand command)
         {

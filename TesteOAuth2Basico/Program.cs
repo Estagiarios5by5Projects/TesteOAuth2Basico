@@ -4,12 +4,16 @@ using Services;
 using StackExchange.Redis;
 using dotenv.net;
 using TesteOAuth2Basico.Repository;
+using TesteOAuth2Basico.Services.Commands;
+using Repositories.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Registro das variáveis de ambiente e configuração do OAuth
 DotEnv.Load();
 builder.Configuration.AddEnvironmentVariables();
+
+//builder.Services.AddScoped<CreateUserCommandHandler>();
 
 // Registrar HttpClient no contêiner de serviços
 builder.Services.AddHttpClient();
@@ -42,6 +46,7 @@ builder.Services.AddTransient<GoogleOauthClient>(provider =>
 });
 
 builder.Services.AddSingleton<UserRepository>();
+
 
 // Configuração do CORS
 builder.Services.AddCors(options =>
