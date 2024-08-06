@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B6aTI8URXao=",
+  "dgSpecHash": "1oDUpv9apq8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj",
+  "projectFilePath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adm\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -11,6 +11,9 @@
     "C:\\Users\\adm\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\dotenv.net\\3.2.0\\dotenv.net.3.2.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\mediatr\\12.4.0\\mediatr.12.4.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.32\\microsoft.aspnetcore.authentication.jwtbearer.6.0.32.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
@@ -20,12 +23,18 @@
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.1\\microsoft.data.sqlclient.5.2.1.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.2.0\\microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512",
-    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
-    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
-    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\7.0.0\\microsoft.extensions.configuration.environmentvariables.7.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\7.0.0\\microsoft.extensions.configuration.fileextensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.configuration.json\\7.0.0\\microsoft.extensions.configuration.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.options\\2.2.0\\microsoft.extensions.options.2.2.0.nupkg.sha512",
-    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.identity.client\\4.60.3\\microsoft.identity.client.4.60.3.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.60.3\\microsoft.identity.client.extensions.msal.4.60.3.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
@@ -72,11 +81,22 @@
     "C:\\Users\\adm\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\adm\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\adm\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Versão detectada do pacote fora da restrição de dependência: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requer MediatR (>= 11.0.0 && < 12.0.0), mas a versão MediatR 12.4.0 foi resolvida.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

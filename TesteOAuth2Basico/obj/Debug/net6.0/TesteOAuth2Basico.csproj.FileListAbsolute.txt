@@ -117,3 +117,10 @@ C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\d
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Secrets.json
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.csproj.AssemblyReference.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.AssemblyInfo.cs
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\TesteOAuth2Basico\obj\Debug\net6.0\TesteOAuth2Basico.sourcelink.json

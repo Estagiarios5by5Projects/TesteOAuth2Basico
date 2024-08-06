@@ -1,0 +1,6 @@
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Domain\obj\Debug\net6.0\Domain.sourcelink.json

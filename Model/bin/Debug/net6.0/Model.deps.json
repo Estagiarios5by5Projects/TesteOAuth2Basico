@@ -9,6 +9,8 @@
       "Model/1.0.0": {
         "dependencies": {
           "Dapper": "2.1.35",
+          "MediatR": "12.4.0",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.32",
           "Microsoft.AspNetCore.Cors": "2.2.0",
           "MongoDB.Bson": "2.28.0",
@@ -35,6 +37,38 @@
           }
         }
       },
+      "MediatR/12.4.0": {
+        "dependencies": {
+          "MediatR.Contracts": "2.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/MediatR.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.4.0.0"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
+        "dependencies": {
+          "MediatR": "12.4.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.1.0.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.32": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0"
@@ -50,7 +84,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
           "Microsoft.Extensions.Options": "2.2.0"
         }
@@ -80,7 +114,14 @@
           "Microsoft.Extensions.Primitives": "2.2.0"
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {},
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "2.2.0"
@@ -89,7 +130,7 @@
       "Microsoft.Extensions.Logging.Abstractions/2.2.0": {},
       "Microsoft.Extensions.Options/2.2.0": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Microsoft.Extensions.Primitives": "2.2.0",
           "System.ComponentModel.Annotations": "4.5.0"
         }
@@ -252,6 +293,27 @@
       "path": "dotenv.net/3.2.0",
       "hashPath": "dotenv.net.3.2.0.nupkg.sha512"
     },
+    "MediatR/12.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s8xhhvsTQqt7jI1XeVqcniiph/QoRmJb1qxVgk7UFpAgOzpzZ0VTl8zV+lFJgxISVqZuJRjmxF+P3AuHyelCrg==",
+      "path": "mediatr/12.4.0",
+      "hashPath": "mediatr.12.4.0.nupkg.sha512"
+    },
+    "MediatR.Contracts/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "path": "mediatr.contracts/2.0.1",
+      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RW3etRuy6Xp63cgqfC0r/ITOtUT0f9ymJl1+1XZdzsYUsfv7WBPC2kXGOP8IYpY/6c4Q6805vbIW/88DopUs3w==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.32": {
       "type": "package",
       "serviceable": true,
@@ -301,12 +363,12 @@
       "path": "microsoft.extensions.configuration.abstractions/2.2.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-f9hstgjVmr6rmrfGSpfsVOl2irKAgr1QjrSi3FgnS7kulxband50f2brRLwySAQTADPZeTdow0mpSMcoAdadCw==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.2.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512"
+      "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
       "type": "package",

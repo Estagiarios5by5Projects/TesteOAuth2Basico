@@ -1,9 +1,7 @@
-﻿using IdentityModel.Client;
-using Microsoft.Data.SqlClient;
+﻿using CrossCutting.Configuration;
+using IdentityModel.Client;
 using Microsoft.Extensions.Logging;
 using Model;
-using Model.DTO;
-using TesteOAuth2Basico.Repository;
 
 
 namespace Services
@@ -90,10 +88,10 @@ namespace Services
                 var tokenResponse = await _httpClient.RequestAuthorizationCodeTokenAsync(new AuthorizationCodeTokenRequest
                 {
 
-                    Address = "https://oauth2.googleapis.com/token",//endpoint de troca de código por token
+                    Address = AppSettings.OAuthDataSettings.TokenEndpoint,//endereço do token
                     Code = authorizationCode,//código de autorização                 
-                    ClientId = "207222560636-s9tdoce9523q0g0d878alvs09ru9c9ei.apps.googleusercontent.com",//ID do cliente                    
-                    ClientSecret = "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",//chave secreta do cliente
+                    ClientId = AppSettings.OAuthDataSettings.ClientId,//ID do cliente                    
+                    ClientSecret = AppSettings.OAuthDataSettings.ClientSecret,//chave secreta do cliente
                     RedirectUri = redirectUri//URI de redirecionamento, após autenticação
 
                 });

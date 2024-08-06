@@ -1,17 +1,256 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\TesteOAuth2Basico.csproj": {}
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\TesteOAuth2Basico.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj": {
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Cache\\Cache.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj",
-        "projectName": "Model",
-        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Cache\\Cache.csproj",
+        "projectName": "Cache",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Cache\\Cache.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\obj\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Cache\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj",
+        "projectName": "CrossCutting.Configuration",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj",
+        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\CrossCutting.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj"
+              },
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj"
+              },
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,6 +293,14 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.32, )"
@@ -95,14 +342,14 @@
         }
       }
     },
-    "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj": {
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj",
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj",
         "projectName": "Repostories",
-        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\obj\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -124,8 +371,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj"
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Cache\\Cache.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Cache\\Cache.csproj"
+              },
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj"
+              },
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj"
               }
             }
           }
@@ -148,6 +401,14 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -206,14 +467,14 @@
         }
       }
     },
-    "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Services.csproj": {
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\obj\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -235,11 +496,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj"
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj"
               },
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj"
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj"
               }
             }
           }
@@ -266,6 +527,14 @@
             "IdentityModel": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -308,14 +577,14 @@
         }
       }
     },
-    "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\TesteOAuth2Basico.csproj": {
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\TesteOAuth2Basico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\TesteOAuth2Basico.csproj",
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\TesteOAuth2Basico.csproj",
         "projectName": "TesteOAuth2Basico",
-        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\TesteOAuth2Basico.csproj",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\TesteOAuth2Basico.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\obj\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -337,14 +606,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj"
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj"
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj"
               },
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Services.csproj"
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Repostories\\Repostories.csproj"
+              },
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\Services.csproj"
               }
             }
           }
@@ -367,6 +639,14 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

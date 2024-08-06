@@ -1,10 +1,11 @@
 using Model;
+using Model.DTO;
 
 namespace Repositories.Utils
 {
     public interface IUserRepository
     {
-        Task AddUserAsync(GoogleUserData user);
-        Task<GoogleUserData> GetUserByIdAsync(string userId);
+        Task<bool> AddUserAsync(UserDTO user);
+        Task<UserDTO?> GetUserByIdAsync(string userId);
     }
 }

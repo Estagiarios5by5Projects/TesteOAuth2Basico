@@ -3,13 +3,21 @@ using Model;
 using Dapper;
 using StackExchange.Redis;
 using Model.DTO;
-using Microsoft.SqlServer.Management.SqlParser.Metadata;
+using Repositories.Utils;
+using CrossCutting.Configuration;
 
 namespace TesteOAuth2Basico.Repository
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
-        public bool PostUserSql(UserDTO googleUser)
+        private readonly string? _connectionString;
+        public UserRepository()
+        {
+            _connectionString = AppSettings.SqlDataSettings.ConnectionString;
+
+        }
+
+        public async Task<bool> AddUserAsync(UserDTO googleUser)
         {
             if (googleUser == null || string.IsNullOrWhiteSpace(googleUser.Email))
             {
@@ -17,8 +25,8 @@ namespace TesteOAuth2Basico.Repository
             }
             try
             {
-                string connectionString = "Data Source=127.0.0.1; Initial Catalog=DBTstOAUthBas; User Id=sa; Password=SqlServer2019!; TrustServerCertificate=Yes;";
-                using (var sqlConnection = new SqlConnection(connectionString))
+
+                using (var sqlConnection = new SqlConnection(_connectionString))
                 {
                     sqlConnection.Open();
                     string checkUserExists = "SELECT COUNT(1) FROM Users WHERE Email = @Email";
@@ -35,46 +43,31 @@ namespace TesteOAuth2Basico.Repository
                         @Email = googleUser.Email,
                         @ProfileImageUrl = googleUser.ProfileImageUrl
                     };
-                    return sqlConnection.Execute(insertUserQuery, obj) > 0;
+                    var response = await sqlConnection.ExecuteAsync(insertUserQuery, obj);
+                    return true;
                 }
-            }catch (SqlException ex)
+            }
+            catch (SqlException ex)
             {
                 Console.WriteLine($"Erro de SQL: {ex.Message}");
-                return false;
+                throw;
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Erro geral: {ex.Message}");
-                return false;
+                throw;
             }
-            
+
         }
-        public bool PostTokenRedis(TokenDTO googleToken)
+        public async Task<UserDTO?> GetUserByIdAsync(string idUser)
         {
-            if (googleToken == null || string.IsNullOrWhiteSpace(googleToken.AccessTokenGoogle))
+
+            using (var sqlConnection = new SqlConnection(_connectionString))
             {
-                throw new ArgumentException("Token de acesso inválido.");
-            }
-            try
-            {
-                var userTokens = new TokenDTO
-                {
-                    IdUserToken = googleToken.IdUserToken,
-                    AccessTokenGoogle = googleToken.AccessTokenGoogle,
-                    RefreshTokenGoogle = googleToken.RefreshTokenGoogle,
-                    AccessTokenGoogleExpiresIn = googleToken.AccessTokenGoogleExpiresIn
-                };
-                string redisString = "localhost:6379";
-                ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(redisString);
-                StackExchange.Redis.IDatabase redisDatabase = redis.GetDatabase();
-                string redisKey = $"user:{googleToken.IdUserToken}:tokens";
-                var tokenValue = Newtonsoft.Json.JsonConvert.SerializeObject(googleToken);
-                return redisDatabase.StringSet(redisKey, tokenValue);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro geral: {ex.Message}");
-                return false;
+                sqlConnection.Open();
+                string query = "SELECT IdUser, Name, Email, ProfileImageUrl FROM Users WHERE IdUser = @IdUser";
+                var response = await sqlConnection.QueryAsync<UserDTO>(query, new { IdUser = idUser });
+                return response.FirstOrDefault();
             }
         }
     }

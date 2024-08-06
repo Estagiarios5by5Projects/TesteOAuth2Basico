@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "YFk0Tqi7n4I=",
+  "dgSpecHash": "2QTfgsDUNXs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj",
+  "projectFilePath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Model\\Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adm\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\dotenv.net\\3.2.0\\dotenv.net.3.2.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\mediatr\\12.4.0\\mediatr.12.4.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.32\\microsoft.aspnetcore.authentication.jwtbearer.6.0.32.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
@@ -13,7 +16,7 @@
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
-    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.2.0\\microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\microsoft.extensions.options\\2.2.0\\microsoft.extensions.options.2.2.0.nupkg.sha512",
@@ -40,5 +43,16 @@
     "C:\\Users\\adm\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Versão detectada do pacote fora da restrição de dependência: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requer MediatR (>= 11.0.0 && < 12.0.0), mas a versão MediatR 12.4.0 foi resolvida.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -1,14 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\",
+  "WorkspaceRootPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basicocqrs\\testeoauth2basico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D64D1874-C694-46E6-AAB0-B7F1A9A1CACA}|Repostories\\Repostories.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\repostories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D64D1874-C694-46E6-AAB0-B7F1A9A1CACA}|Repostories\\Repostories.csproj|solutionrelative:repostories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basicocqrs\\testeoauth2basico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basicocqrs\\services\\googleoauthclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF1BD8E4-0DE0-45B2-9CA3-630D218482F8}|Services\\Services.csproj|solutionrelative:services\\googleoauthclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CDB68A3-3E04-4BC2-A730-C8F2A8BD3F8D}|CrossCutting.Configuration\\CrossCutting.Configuration.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basicocqrs\\crosscutting.configuration\\configurationappsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CDB68A3-3E04-4BC2-A730-C8F2A8BD3F8D}|CrossCutting.Configuration\\CrossCutting.Configuration.csproj|solutionrelative:crosscutting.configuration\\configurationappsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basicocqrs\\testeoauth2basico\\infrastructure\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\infrastructure\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basicocqrs\\testeoauth2basico\\controllers\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\controllers\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{597468A7-4DA9-4953-AAA0-8159565D276A}|Cache\\Cache.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basicocqrs\\cache\\configurationcachesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{597468A7-4DA9-4953-AAA0-8159565D276A}|Cache\\Cache.csproj|solutionrelative:cache\\configurationcachesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\appsettings.json",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\appsettings.json",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\appsettings.json",
+              "RelativeToolTip": "TesteOAuth2Basico\\appsettings.json",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-05T17:39:02.764Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -34,28 +67,75 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repostories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\UserRepository.cs",
-              "RelativeToolTip": "Repostories\\UserRepository.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAgwAcAAAAjAAAA",
+              "DocumentIndex": 2,
+              "Title": "GoogleOauthClient.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\GoogleOauthClient.cs",
+              "RelativeDocumentMoniker": "Services\\GoogleOauthClient.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Services\\GoogleOauthClient.cs",
+              "RelativeToolTip": "Services\\GoogleOauthClient.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T18:34:00.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T11:25:46.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bootstrapper.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\Infrastructure\\Bootstrapper.cs",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Infrastructure\\Bootstrapper.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\Infrastructure\\Bootstrapper.cs",
+              "RelativeToolTip": "TesteOAuth2Basico\\Infrastructure\\Bootstrapper.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAcwEcAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T18:23:41.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConfigurationAppsettings.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\CrossCutting.Configuration\\ConfigurationAppsettings.cs",
+              "RelativeDocumentMoniker": "CrossCutting.Configuration\\ConfigurationAppsettings.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\CrossCutting.Configuration\\ConfigurationAppsettings.cs",
+              "RelativeToolTip": "CrossCutting.Configuration\\ConfigurationAppsettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:47:00.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConfigurationCacheSettings.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Cache\\ConfigurationCacheSettings.cs",
+              "RelativeDocumentMoniker": "Cache\\ConfigurationCacheSettings.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\Cache\\ConfigurationCacheSettings.cs",
+              "RelativeToolTip": "Cache\\ConfigurationCacheSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:44:30.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\Controllers\\Startup.cs",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Controllers\\Startup.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\Controllers\\Startup.cs",
+              "RelativeToolTip": "TesteOAuth2Basico\\Controllers\\Startup.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwB0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T15:34:00.698Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\UserController.cs",
-              "RelativeToolTip": "TesteOAuth2Basico\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAtAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\Program.cs",
+              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Program.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2BasicoCQRS\\TesteOAuth2Basico\\Program.cs",
+              "RelativeToolTip": "TesteOAuth2Basico\\Program.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAACoAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T18:11:07.665Z",
+              "WhenOpened": "2024-08-05T02:21:01.991Z",
               "EditorCaption": ""
             }
           ]

@@ -14,3 +14,9 @@ C:\Users\adm\source\repos\TesteOAuth2Basico\Repostories\obj\Debug\net6.0\refint\
 C:\Users\adm\source\repos\TesteOAuth2Basico\Repostories\obj\Debug\net6.0\Repostories.pdb
 C:\Users\adm\source\repos\TesteOAuth2Basico\Repostories\obj\Debug\net6.0\ref\Repostories.dll
 C:\Users\adm\source\repos\TesteOAuth2Basico\Repostories\obj\Debug\net6.0\Repostories.sourcelink.json
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Repostories\obj\Debug\net6.0\Repostories.csproj.AssemblyReference.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Repostories\obj\Debug\net6.0\Repostories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Repostories\obj\Debug\net6.0\Repostories.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Repostories\obj\Debug\net6.0\Repostories.AssemblyInfo.cs
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Repostories\obj\Debug\net6.0\Repostories.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Repostories\obj\Debug\net6.0\Repostories.sourcelink.json

@@ -16,3 +16,9 @@ C:\Users\adm\source\repos\TesteOAuth2Basico\Services\obj\Debug\net6.0\refint\Ser
 C:\Users\adm\source\repos\TesteOAuth2Basico\Services\obj\Debug\net6.0\Services.pdb
 C:\Users\adm\source\repos\TesteOAuth2Basico\Services\obj\Debug\net6.0\ref\Services.dll
 C:\Users\adm\source\repos\TesteOAuth2Basico\Services\obj\Debug\net6.0\Services.sourcelink.json
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\Services\obj\Debug\net6.0\Services.sourcelink.json
