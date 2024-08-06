@@ -40,13 +40,13 @@ namespace Services
             {
                 throw new ArgumentNullException(nameof(accessToken));
             }
-
+            var tokenInfo = AppSettings.OAuthDataSettings.TokenInfoEndpoint;
             try
             {
                 _logger.LogInformation("Iniciando a validação do token de acesso: {AccessToken}", accessToken);
 
                 // Enviar uma solicitação GET para validar o token
-                var response = await _httpClient.GetAsync($"https://www.googleapis.com/oauth2/v3/tokeninfo?access_token={accessToken}");
+                var response = await _httpClient.GetAsync($"{tokenInfo}?access_token={accessToken}");
 
                 if (!response.IsSuccessStatusCode)
                 {
@@ -80,7 +80,7 @@ namespace Services
             {
                 throw new ArgumentNullException(nameof(redirectUri));
             }
-
+            
             try
             {
                 _logger.LogInformation("Iniciando a solicitação de token de acesso com o código de autorização: {AuthorizationCode} e redirectUri: {RedirectUri}", authorizationCode, redirectUri);

@@ -11,3 +11,16 @@ C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\CrossCutting.Configuration\obj\Debug\
 C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\CrossCutting.Configuration\obj\Debug\net6.0\refint\CrossCutting.Configuration.dll
 C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\CrossCutting.Configuration\obj\Debug\net6.0\CrossCutting.Configuration.pdb
 C:\Users\adm\Desktop\TesteOAuth2BasicoCQRS\CrossCutting.Configuration\obj\Debug\net6.0\ref\CrossCutting.Configuration.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\bin\Debug\net6.0\CrossCutting.Configuration.deps.json
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\bin\Debug\net6.0\CrossCutting.Configuration.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\bin\Debug\net6.0\CrossCutting.Configuration.pdb
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\CrossCutting.Configuration.csproj.AssemblyReference.cache
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\CrossCutting.Configuration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\CrossCutting.Configuration.AssemblyInfoInputs.cache
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\CrossCutting.Configuration.AssemblyInfo.cs
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\CrossCutting.Configuration.csproj.CoreCompileInputs.cache
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\CrossCutting.Configuration.sourcelink.json
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\CrossCutting.Configuration.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\refint\CrossCutting.Configuration.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\CrossCutting.Configuration.pdb
+C:\Users\adm\source\repos\TesteOAuth2Basico\CrossCutting.Configuration\obj\Debug\net6.0\ref\CrossCutting.Configuration.dll

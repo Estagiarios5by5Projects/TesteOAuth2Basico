@@ -1,5 +1,7 @@
 ﻿using Cache;
 using CrossCutting.Configuration;
+using Domain.Handlers;
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -16,8 +18,6 @@ namespace TesteOAuth2Basico.Infrastructure
 {
     public class Bootstrapper
     {
-        //todas as injeções de dependência
-
         public Bootstrapper(IServiceCollection services)
         {
 
@@ -49,6 +49,9 @@ namespace TesteOAuth2Basico.Infrastructure
         }
         private static void InjectionAuthentication(IServiceCollection services)
         {
+            var inssuerJwt = AppSettings.JWTDataSettings.Issuer;
+            var audienceJwt = AppSettings.JWTDataSettings.Audience;
+            var secretKeyJwt = AppSettings.JWTDataSettings.SecretKey;
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -58,25 +61,27 @@ namespace TesteOAuth2Basico.Infrastructure
                         ValidateAudience = true,
                         ValidateLifetime = true,
                         ValidateIssuerSigningKey = true,
-                        ValidIssuer = AppSettings.JWTDataSettings.Issuer,
-                        ValidAudience = AppSettings.JWTDataSettings.Audience,
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(AppSettings.JWTDataSettings.SecretKey))
+                        ValidIssuer = inssuerJwt,
+                        ValidAudience = audienceJwt,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKeyJwt))
                     };
                 });
         }
         private static void InjectionCors(IServiceCollection services)
         {
+            var allowedOrigins = AppSettings.CorsDataSettings.AllowedOrigins;
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowSpecificOrigin",
-                    builder => builder.WithOrigins(AppSettings.OAuthDataSettings.RedirectUri) //ERRADO CORS
+                    builder => builder.WithOrigins(allowedOrigins)
                                       .AllowAnyHeader()
                                       .AllowAnyMethod());
             });
         }
         private static void InjectionRedis(IServiceCollection services)
         {
-            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(CacheSettings.RedisDataSettings.ConnectionStringRedis));
+            var connectionStringRedis = AppSettings.RedisDataSettings.ConnectionStringRedis;
+            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(connectionStringRedis));
             services.AddSingleton<IDatabase>(sp => sp.GetRequiredService<IConnectionMultiplexer>().GetDatabase());
         }
         private static void InjectionHttpClient(IServiceCollection services)

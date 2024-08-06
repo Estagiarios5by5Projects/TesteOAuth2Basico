@@ -8,6 +8,8 @@
         public string? ApiEndpoint { get { return GetApiEndpoint(); } }
         public string? RedirectUri { get { return GetRedirectUri(); } }
 
+        public string? TokenInfoEndpoint{ get { return GetTokenInfoEndpoint(); } }
+
         private static string? GetClientSecret()
         {
             return ConfigurationAppsettings.Builder()["GoogleOAuth:ClientId"];
@@ -27,6 +29,10 @@
         private static string? GetRedirectUri()
         {
             return ConfigurationAppsettings.Builder()["GoogleOAuth:RedirectUri"];
+        }
+        private static string? GetTokenInfoEndpoint()
+        {
+            return ConfigurationAppsettings.Builder()["GoogleOAuth:TokenInfoEndpoint"];
         }
     }
 }

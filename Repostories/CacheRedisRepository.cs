@@ -15,7 +15,7 @@ namespace Repostories
         private readonly string? _connectionStringRedis;
         public CacheRedisRepository()
         {
-            _connectionStringRedis = CacheSettings.RedisDataSettings.ConnectionStringRedis;
+            _connectionStringRedis = AppSettings.RedisDataSettings.ConnectionStringRedis;
 
         }
 

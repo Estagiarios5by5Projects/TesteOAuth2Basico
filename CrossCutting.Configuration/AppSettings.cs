@@ -8,5 +8,6 @@ namespace CrossCutting.Configuration
         public static OAuthDataSettings OAuthDataSettings = new OAuthDataSettings();
         public static JWTDataSettings JWTDataSettings = new JWTDataSettings();
         public static CorsDataSettings CorsDataSettings = new CorsDataSettings();
+        public static RedisDataSettings RedisDataSettings = new RedisDataSettings();
     }
 }
