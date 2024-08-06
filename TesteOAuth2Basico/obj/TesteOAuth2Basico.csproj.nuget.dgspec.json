@@ -4,14 +4,14 @@
     "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\TesteOAuth2Basico.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache\\Cache.csproj": {
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache2\\Cache.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache\\Cache.csproj",
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache2\\Cache.csproj",
         "projectName": "Cache",
-        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache\\Cache.csproj",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache2\\Cache.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache\\obj\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -36,8 +36,8 @@
               "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj": {
                 "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj"
               },
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj"
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Domain.csproj"
               }
             }
           }
@@ -56,36 +56,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.4.0, )"
-            },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Json": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "StackExchange.Redis": {
-              "target": "Package",
-              "version": "[2.8.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -154,11 +124,11 @@
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[12.0.1, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -229,9 +199,6 @@
               "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj": {
                 "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj"
               },
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj"
-              },
               "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Services.csproj": {
                 "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Services.csproj"
               }
@@ -255,11 +222,19 @@
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[12.0.1, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "ServiceStack": {
+              "target": "Package",
+              "version": "[8.3.0, )"
             }
           },
           "imports": [
@@ -334,11 +309,11 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[12.0.1, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -381,14 +356,14 @@
         }
       }
     },
-    "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj": {
+    "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj",
-        "projectName": "Repostories",
-        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj",
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\obj\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -410,11 +385,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache\\Cache.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache\\Cache.csproj"
-              },
               "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj": {
                 "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj"
+              },
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Domain.csproj"
               },
               "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj": {
                 "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj"
@@ -437,53 +412,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.35, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.4.0, )"
-            },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[6.0.32, )"
-            },
-            "Microsoft.AspNetCore.Cors": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.1, )"
-            },
-            "Microsoft.SqlServer.Management.SqlParser": {
-              "target": "Package",
-              "version": "[172.0.1, )"
-            },
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.28.0, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            },
-            "Portable.BouncyCastle": {
-              "target": "Package",
-              "version": "[1.9.0, )"
-            },
-            "StackExchange.Redis": {
-              "target": "Package",
-              "version": "[2.8.0, )"
-            },
-            "dotenv.net": {
-              "target": "Package",
-              "version": "[3.2.0, )"
             }
           },
           "imports": [
@@ -535,11 +466,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj"
+              },
               "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj": {
                 "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj"
-              },
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj"
               }
             }
           }
@@ -569,11 +500,11 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[12.0.1, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -645,14 +576,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache2\\Cache.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache2\\Cache.csproj"
+              },
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\CrossCutting.Configuration\\CrossCutting.Configuration.csproj"
+              },
               "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Domain.csproj"
               },
               "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj": {
                 "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Model\\Model.csproj"
               },
-              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj": {
-                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repostories\\Repostories.csproj"
+              "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Repository\\Repository.csproj"
               },
               "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Services.csproj": {
                 "projectPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Services\\Services.csproj"
@@ -681,11 +618,11 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[12.0.1, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B04E2E8F-5EAA-4A08-94F1-668BBEA78169}|Domain\\Domain.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\domain\\queries\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B04E2E8F-5EAA-4A08-94F1-668BBEA78169}|Domain\\Domain.csproj|solutionrelative:domain\\queries\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B04E2E8F-5EAA-4A08-94F1-668BBEA78169}|Domain\\Domain.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\domain\\queries\\getuser\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B04E2E8F-5EAA-4A08-94F1-668BBEA78169}|Domain\\Domain.csproj|solutionrelative:domain\\queries\\getuser\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C305E467-4205-485C-95FE-F78DBBA5A6CD}|Cache2\\Cache.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\cache2\\cacheredisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C305E467-4205-485C-95FE-F78DBBA5A6CD}|Cache2\\Cache.csproj|solutionrelative:cache2\\cacheredisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\infrastructure\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\infrastructure\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B04E2E8F-5EAA-4A08-94F1-668BBEA78169}|Domain\\Domain.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\domain\\commands\\inserttoken\\inserttokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B04E2E8F-5EAA-4A08-94F1-668BBEA78169}|Domain\\Domain.csproj|solutionrelative:domain\\commands\\inserttoken\\inserttokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B04E2E8F-5EAA-4A08-94F1-668BBEA78169}|Domain\\Domain.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\domain\\interfaces\\icacheredisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B04E2E8F-5EAA-4A08-94F1-668BBEA78169}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\icacheredisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|solutionrelative:testeoauth2basico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D686576A-6A94-4CF9-A9D2-7C1BCB646586}|TesteOAuth2Basico\\TesteOAuth2Basico.csproj|c:\\users\\adm\\source\\repos\\testeoauth2basico\\testeoauth2basico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -34,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\appsettings.json",
               "RelativeDocumentMoniker": "TesteOAuth2Basico\\appsettings.json",
@@ -61,51 +69,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GetUserByIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Queries\\GetUserByIdQuery.cs",
-              "RelativeDocumentMoniker": "Domain\\Queries\\GetUserByIdQuery.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Queries\\GetUserByIdQuery.cs",
-              "RelativeToolTip": "Domain\\Queries\\GetUserByIdQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Title": "GetUserByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Queries\\GetUser\\GetUserByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Domain\\Queries\\GetUser\\GetUserByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Queries\\GetUser\\GetUserByIdQueryHandler.cs",
+              "RelativeToolTip": "Domain\\Queries\\GetUser\\GetUserByIdQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T15:18:46.11Z",
+              "WhenOpened": "2024-08-06T20:05:21.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "TesteOAuth2Basico\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Controllers\\UserController.cs",
-              "RelativeToolTip": "TesteOAuth2Basico\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBwAAAANAAAA",
+              "Title": "CacheRedisRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache2\\CacheRedisRepository.cs",
+              "RelativeDocumentMoniker": "Cache2\\CacheRedisRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Cache2\\CacheRedisRepository.cs",
+              "RelativeToolTip": "Cache2\\CacheRedisRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T15:11:33.561Z",
+              "WhenOpened": "2024-08-06T20:03:29.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "InsertTokenCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Commands\\InsertToken\\InsertTokenCommandHandler.cs",
+              "RelativeDocumentMoniker": "Domain\\Commands\\InsertToken\\InsertTokenCommandHandler.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Commands\\InsertToken\\InsertTokenCommandHandler.cs",
+              "RelativeToolTip": "Domain\\Commands\\InsertToken\\InsertTokenCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T20:00:28.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICacheRedisRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Interfaces\\ICacheRedisRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\ICacheRedisRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\Domain\\Interfaces\\ICacheRedisRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\ICacheRedisRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T19:06:20.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Bootstrapper.cs",
               "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Infrastructure\\Bootstrapper.cs",
               "RelativeDocumentMoniker": "TesteOAuth2Basico\\Infrastructure\\Bootstrapper.cs",
               "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Infrastructure\\Bootstrapper.cs",
               "RelativeToolTip": "TesteOAuth2Basico\\Infrastructure\\Bootstrapper.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAADgvxcAAAAJAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwCoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T14:49:42.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Program.cs",
               "RelativeDocumentMoniker": "TesteOAuth2Basico\\Program.cs",
               "ToolTip": "C:\\Users\\adm\\source\\repos\\TesteOAuth2Basico\\TesteOAuth2Basico\\Program.cs",
               "RelativeToolTip": "TesteOAuth2Basico\\Program.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAApwBcAAABJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-05T02:21:01.991Z",
               "EditorCaption": ""

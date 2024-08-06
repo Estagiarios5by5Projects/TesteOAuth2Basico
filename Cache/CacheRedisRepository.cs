@@ -1,5 +1,5 @@
 ﻿using CrossCutting.Configuration;
-using Model.DTO;
+using Domain.Models;
 using StackExchange.Redis;
 
 namespace Cache

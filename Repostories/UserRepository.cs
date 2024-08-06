@@ -1,10 +1,6 @@
-﻿using Microsoft.Data.SqlClient;
-using Model;
+﻿using CrossCutting.Configuration;
 using Dapper;
-using StackExchange.Redis;
-using Model.DTO;
-using Repositories.Utils;
-using CrossCutting.Configuration;
+using Microsoft.Data.SqlClient;
 
 namespace TesteOAuth2Basico.Repository
 {

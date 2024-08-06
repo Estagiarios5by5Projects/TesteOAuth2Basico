@@ -1,5 +1,5 @@
-using Domain.Commands;
-using Domain.Queries;
+using Domain.Commands.CreateUser;
+using Domain.Queries.GetUser;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,7 +32,6 @@ namespace TesteOAuth2Basico.Controllers
         [HttpGet("get-user")]
         public async Task<IActionResult> GetUserById(string idUser)
         {
-            //var query = new GetUserByIdQuery { IdUser = idUser };
             var user = await _mediator.Send(new GetUserByIdQuery { IdUser = idUser });
             if (user == null)
             {
