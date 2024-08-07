@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Queries.GetUser
 {
-    public class GetUserByIdQuery : IRequest<UserDTO>
+    public class GetUserByEmailQuery : IRequest<UserDTO>
     {
-        public string IdUser { get; set; }
+        public string Email { get; set; }
     }
 }

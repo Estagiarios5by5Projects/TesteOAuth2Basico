@@ -30,9 +30,9 @@ namespace TesteOAuth2Basico.Controllers
         }
 
         [HttpGet("get-user")]
-        public async Task<IActionResult> GetUserById(string idUser)
+        public async Task<IActionResult> GetUserByEmail(string email)
         {
-            var user = await _mediator.Send(new GetUserByIdQuery { IdUser = idUser });
+            var user = await _mediator.Send(new GetUserByEmailQuery { Email = email });
             if (user == null)
             {
                 return NotFound("Usuário não encontrado.");

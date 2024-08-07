@@ -31,7 +31,7 @@ namespace TesteOAuth2Basico.Infrastructure
 
         private static void InjectionMediator(IServiceCollection services)
         {
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetUserByIdQuery).Assembly));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetUserByEmailQuery).Assembly));
 
             //services.AddMediatR(typeof(GetUserByIdQuery).GetTypeInfo().Assembly);
         }

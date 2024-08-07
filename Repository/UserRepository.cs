@@ -57,14 +57,14 @@ namespace TesteOAuth2Basico.Repository
             }
 
         }
-        public async Task<UserDTO?> GetUserByIdAsync(string idUser)
+        public async Task<UserDTO?> GetUserByEmailAsync(string email)
         {
 
             using (var sqlConnection = new SqlConnection(_connectionString))
             {
                 sqlConnection.Open();
-                string query = "SELECT IdUser, Name, Email, ProfileImageUrl FROM Users WHERE IdUser = @IdUser";
-                var response = await sqlConnection.QueryAsync<UserDTO>(query, new { IdUser = idUser });
+                string query = "SELECT IdUser, Name, Email, ProfileImageUrl FROM Users WHERE Email = @Email";
+                var response = await sqlConnection.QueryAsync<UserDTO>(query, new { Email = email });
                 return response.FirstOrDefault();
             }
         }
