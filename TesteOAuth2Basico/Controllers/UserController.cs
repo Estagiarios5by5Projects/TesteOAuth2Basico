@@ -42,28 +42,6 @@ namespace TesteOAuth2Basico.Controllers
                 return Ok(user);
             }
         }
-
-        //public async Task<UserDTO> InsertUser(CreateUserComand googleUser)
-        //using (var sqlConnection = new SqlConnection("Data Source=127.0.0.1; Initial Catalog=DBTstOAUthBas; User Id=sa; Password=SqlServer2019!; TrustServerCertificate=Yes;"))
-        //{
-        //    sqlConnection.Open();
-        //    UserDTO googleUserData = new UserDTO
-        //    {
-        //        IdUser = googleUser.IdUser,
-        //        Name = googleUser.Name,
-        //        Email = googleUser.Email,
-        //        ProfileImageUrl = googleUser.ProfileImageUrl
-        //    };
-        //    bool result = _userRepository.PostUserSql(googleUserData);
-        //    if (result)
-        //    {
-        //        return googleUserData;
-        //    }
-        //    else
-        //    {
-        //        return null;
-        //    }
-
     }
 }
 
