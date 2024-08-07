@@ -1,9 +1,6 @@
 ﻿using MediatR;
 using Model.DTO;
 using Repositories.Utils;
-using ServiceStack.Host;
-using System.Net;
-using System.Web.Mvc;
 
 namespace Domain.Queries.GetUser
 {

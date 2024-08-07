@@ -29,7 +29,7 @@ namespace TesteOAuth2Basico.Repository
                     sqlConnection.Open();
                     string checkUserExists = "SELECT COUNT(1) FROM Users WHERE Email = @Email";
                     int userExists = sqlConnection.ExecuteScalar<int>(checkUserExists, new { Email = googleUser.Email });
-                    if (userExists > 0)
+                    if (userExists > 0) //retorna 0 se não existir e 1 se existir
                     {
                         return false;
                     }

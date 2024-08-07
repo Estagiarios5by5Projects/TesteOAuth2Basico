@@ -121,3 +121,15 @@ C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\T
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\obj\Debug\net6.0\ref\TesteOAuth2Basico.dll
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Cache.dll
 C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Cache.pdb
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\ServiceStack.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\ServiceStack.Client.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\ServiceStack.Common.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\ServiceStack.Interfaces.dll
+C:\Users\adm\source\repos\TesteOAuth2Basico\TesteOAuth2Basico\bin\Debug\net6.0\ServiceStack.Text.dll

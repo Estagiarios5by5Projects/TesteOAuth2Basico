@@ -1,6 +1,4 @@
-﻿using Domain.Commands;
-using Domain.Commands.InsertToken;
-using Domain.Queries;
+﻿using Domain.Commands.InsertToken;
 using Domain.Queries.ValidateToken;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +19,7 @@ namespace TesteOAuth2Basico.Controllers
         {
             var query = new ValidateTokenQuery { AccessToken = accessToken };
             var isValidToken = await _mediator.Send(query);
-            if (isValidToken)
+            if (isValidToken == true )
             {
                 return Ok("Token de acesso é válido.");
             }
@@ -45,76 +43,6 @@ namespace TesteOAuth2Basico.Controllers
                 return BadRequest("Token de acesso já existe.");
             }
         }
-        //public async Task<IActionResult> InsertTokenRedis(TokenDTO tokenUser)
-        //{
-        //    string redisString = "localhost:6379";
-        //    ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(redisString);
-        //    IDatabase redisDatabase = redis.GetDatabase();
-        //    bool result = await _mediator.PostTokenRedis(tokenUser); // Alteração: Adicionar o await para aguardar a conclusão do método assíncrono
-        //    if (result)
-        //    {
-        //        return Ok("Token de acesso inserido no Redis com sucesso.");
-        //    }
-        //    else
-        //    {
-        //        return BadRequest("Token de acesso já existe.");
-        //    }
-        //}
-        //public async Task<IActionResult> ValidateToken(string accessToken)
-        //{
-        //    if (string.IsNullOrWhiteSpace(accessToken))
-        //    {
-        //        return BadRequest("Token de acesso inválido.");
-        //    }
-        //    try
-        //    {
-        //        var isValidToken = await _googleOauthClient.ValidateAccessTokenAsync(accessToken);
-
-        //        if (isValidToken)
-        //        {
-        //            return Ok("Token de acesso é válido.");
-        //        }
-        //        else
-        //        {
-        //            return Unauthorized("Token de acesso não é válido.");
-        //        }
-        //    }
-        //    catch (HttpRequestException)
-        //    {
-        //        return StatusCode(503, "Erro de comunicação com o servidor de validação. Tente novamente mais tarde.");
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return StatusCode(500, "Ocorreu um erro interno na VALIDAÇÃO. Tente novamente mais tarde.");
-        //    }
-        //}
-
-        //public async Task<IActionResult> InsertTokenRedis(TokenDTO tokenUser)
-        //{ var command = new InsertTokenCommand { Token = tokenUser };
-        //    var token = await _mediator.Send(command);
-        //    if (token)
-        //    {
-        //        return Ok("Token de acesso inserido no Redis com sucesso.");
-        //    }
-        //    else
-        //    {
-        //        return BadRequest("Token de acesso já existe.");
-        // }
-        //public async Task<IActionResult> InsertTokenRedis(TokenDTO tokenUser)
-        //{
-        //    string redisString = "localhost:6379";
-        //    ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(redisString);
-        //    IDatabase redisDatabase = redis.GetDatabase();
-        //    bool result = _userRepository.PostTokenRedis(tokenUser);
-        //    if (result)
-        //    {
-        //        return Ok("Token de acesso inserido no Redis com sucesso.");
-        //    }
-        //    else
-        //    {
-        //        return BadRequest("Token de acesso já existe.");
-        //    }
-        //}
     }
 }
 

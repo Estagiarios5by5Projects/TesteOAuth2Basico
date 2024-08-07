@@ -23,30 +23,29 @@ namespace Services
             HttpClient httpClient
         )
         {
-            _clientId = clientId ?? throw new ArgumentNullException(nameof(clientId));
-            _clientSecret = clientSecret ?? throw new ArgumentNullException(nameof(clientSecret));
-            _tokenEndpoint = tokenEndpoint ?? throw new ArgumentNullException(nameof(tokenEndpoint));
-            _apiEndpoint = apiEndpoint ?? throw new ArgumentNullException(nameof(apiEndpoint));
+            _clientId = AppSettings.OAuthDataSettings.ClientId;
+            _clientSecret = AppSettings.OAuthDataSettings.ClientSecret;
+            _tokenEndpoint = AppSettings.OAuthDataSettings.TokenEndpoint;
+            _apiEndpoint = AppSettings.OAuthDataSettings.ApiEndpoint;
             _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
 
-            // Inicializa o LoggerFactory e cria um logger sem passar pelo construtor
             var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
             _logger = loggerFactory.CreateLogger<GoogleOauthClient>();
         }
 
         public async Task<bool> ValidateAccessTokenAsync(string accessToken)
         {
+            var tokenInfo = AppSettings.OAuthDataSettings.TokenInfoEndpoint;
             if (string.IsNullOrEmpty(accessToken))
             {
                 throw new ArgumentNullException(nameof(accessToken));
-            }
-            var tokenInfo = AppSettings.OAuthDataSettings.TokenInfoEndpoint;
+            }       
             try
             {
                 _logger.LogInformation("Iniciando a validação do token de acesso: {AccessToken}", accessToken);
 
-                // Enviar uma solicitação GET para validar o token
-                var response = await _httpClient.GetAsync($"{tokenInfo}?access_token={accessToken}");
+                
+                var response = await _httpClient.GetAsync($"{tokenInfo}{accessToken}");
 
                 if (!response.IsSuccessStatusCode)
                 {
@@ -55,9 +54,6 @@ namespace Services
                 }
 
                 var responseBody = await response.Content.ReadAsStringAsync();
-
-                // Aqui você pode verificar o conteúdo da resposta para assegurar que o token é válido
-                // Normalmente, se o token não for válido, o Google retornará um erro com uma descrição
 
                 _logger.LogInformation("Token de acesso validado com sucesso.");
                 return true;
@@ -88,11 +84,11 @@ namespace Services
                 var tokenResponse = await _httpClient.RequestAuthorizationCodeTokenAsync(new AuthorizationCodeTokenRequest
                 {
 
-                    Address = AppSettings.OAuthDataSettings.TokenEndpoint,//endereço do token
-                    Code = authorizationCode,//código de autorização                 
-                    ClientId = AppSettings.OAuthDataSettings.ClientId,//ID do cliente                    
-                    ClientSecret = AppSettings.OAuthDataSettings.ClientSecret,//chave secreta do cliente
-                    RedirectUri = redirectUri//URI de redirecionamento, após autenticação
+                    Address = AppSettings.OAuthDataSettings.TokenEndpoint,
+                    Code = authorizationCode,                
+                    ClientId = AppSettings.OAuthDataSettings.ClientId,                  
+                    ClientSecret = AppSettings.OAuthDataSettings.ClientSecret,
+                    RedirectUri = redirectUri
 
                 });
 

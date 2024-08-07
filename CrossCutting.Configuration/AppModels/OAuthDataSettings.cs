@@ -7,16 +7,15 @@
         public string? TokenEndpoint { get { return GetTokenEndpoint(); } }
         public string? ApiEndpoint { get { return GetApiEndpoint(); } }
         public string? RedirectUri { get { return GetRedirectUri(); } }
-
         public string? TokenInfoEndpoint{ get { return GetTokenInfoEndpoint(); } }
 
         private static string? GetClientSecret()
         {
-            return ConfigurationAppsettings.Builder()["GoogleOAuth:ClientId"];
+            return ConfigurationAppsettings.Builder()["GoogleOAuth:ClientSecret"];
         }
         private static string? GetClientId()
         {
-            return ConfigurationAppsettings.Builder()["GoogleOAuth:ClientSecret"];
+            return ConfigurationAppsettings.Builder()["GoogleOAuth:ClientId"]; 
         }
         private static string? GetTokenEndpoint()
         {
